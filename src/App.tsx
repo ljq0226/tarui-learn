@@ -11,6 +11,9 @@ function App() {
     // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
     setGreetMsg(await invoke("greet", { name }));
   }
+  const aa = ()=>{
+    console.log(' aaaa', )
+  }
 
   return (
     <div className="container">
@@ -18,7 +21,7 @@ function App() {
 
       <p>Click on the Tauri, Vite, and React logos to learn more.</p>
       <button onClick={()=>{
-        alert('asd')
+        aa()
       }}>asd</button>
       <div className="row">
         <form
